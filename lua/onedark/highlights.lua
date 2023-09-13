@@ -484,13 +484,19 @@ hl.plugins.nvim_tree = {
     NvimTreeFolderName = colors.Blue,
 }
 hl.plugins.telescope = {
-    TelescopeBorder = colors.Red,
-    TelescopePromptBorder = colors.Cyan,
-    TelescopeResultsBorder = colors.Cyan,
-    TelescopePreviewBorder = colors.Cyan,
+    TelescopeBorder = { fg = c.bg_d },
+    TelescopePromptNormal = { bg = c.bg_d },
+    TelescopePromptBorder = { fg = c.bg_d, bg = c.bg_d },
+    TelescopePromptTitle = { fg = c.bg2, bg = c.red },
+    TelescopeResultsNormal = { bg = c.bg_d },
+    TelescopeResultsBorder = { fg = c.bg_d, bg = c.bg_d },
+    TelescopeResultsTitle = { fg = c.bg_d, bg = c.bg_d },
+    TelescopePreviewNormal = { bg = c.bg_d },
+    TelescopePreviewBorder = { fg = c.bg_d, bg = c.bg_d },
+    TelescopePreviewTitle = { fg = c.bg2, bg = c.green },
     TelescopeMatching = { fg = c.orange, fmt = "bold" },
     TelescopePromptPrefix = colors.Green,
-    TelescopeSelection =  { bg =c.bg2 },
+    TelescopeSelection =  { bg = c.bg2 },
     TelescopeSelectionCaret = colors.Yellow
 }
 
