@@ -483,6 +483,15 @@ hl.plugins.nvim_tree = {
     NvimTreeSymlink = colors.Purple,
     NvimTreeFolderName = colors.Blue,
 }
+
+hl.plugins.noice = {
+	NoiceCmdlineIcon = colors.Yellow,
+	NoiceCmdlinePopup = { fg = c.fg, bg = c.bg_d },
+	NoicePopupmenu = { fg = c.fg, bg = c.bg_d },
+	NoicePopupmenuMatch = { fg = c.orange, fmt = "bold" },
+	NoicePopupmenuSelected = { bg = c.bg2 },
+}
+
 hl.plugins.telescope = {
     TelescopeBorder = { fg = c.bg_d },
     TelescopePromptNormal = { bg = c.bg_d },
